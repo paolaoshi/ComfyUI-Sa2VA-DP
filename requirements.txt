@@ -1,0 +1,19 @@
+# Sa2VA ComfyUI节点依赖项
+# 这些包需要在你的ComfyUI Python环境中安装
+
+# 核心依赖
+torch>=2.0.0
+transformers>=4.57.0
+accelerate>=0.20.0
+pillow>=9.0.0
+numpy>=1.20.0
+
+# HuggingFace相关
+huggingface_hub>=0.20.0
+
+# Qwen模型支持
+qwen_vl_utils
+
+# 可选依赖（用于加速和优化）
+# bitsandbytes  # 8位量化支持，需要CUDA
+# flash-attn    # Flash Attention加速，需要CUDA
