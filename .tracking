@@ -1,0 +1,15 @@
+.github/workflows/publish.yml
+.gitignore
+README.md
+__init__.py
+image-1.png
+image.png
+install.py
+model_manager.py
+nodes/__init__.py
+nodes/sa2va_node.py
+pyproject.toml
+requirements.txt
+test_node.py
+test_path_fix.py
+test_path_simple.py

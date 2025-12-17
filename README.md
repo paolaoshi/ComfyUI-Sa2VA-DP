@@ -96,9 +96,18 @@ ComfyUI/models/Sa2VA/
 # 使用huggingface-cli
 huggingface-cli download ByteDance/Sa2VA-Qwen3-VL-4B --local-dir ComfyUI/models/Sa2VA/Sa2VA-Qwen3-VL-4B
 ```
-## 🔧 最新更新 (v1.0.2)
+## 🔧 最新更新 (v1.0.3)
 
-### 🐛 重要Bug修复
+### 🛠️ 核心优化
+
+**全面采用 ComfyUI 原生路径管理**：
+
+1. ✅ **引入 `folder_paths` 模块** - 替换原有的路径自动检测逻辑，与 ComfyUI 核心保持一致
+2. ✅ **更强的兼容性** - 完美适配 Windows/Linux/Mac 系统
+3. ✅ **标准模型路径** - 模型统一存储在 `ComfyUI/models/Sa2VA`，符合 ComfyUI 规范
+4. ✅ **代码精简** - 移除了冗余的路径查找代码，运行更稳定
+
+### 🐛 历史更新 (v1.0.2)
 
 **修复了致命的路径问题**：
 

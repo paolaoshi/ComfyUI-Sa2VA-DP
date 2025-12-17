@@ -9,6 +9,7 @@ import gc
 from contextlib import nullcontext
 from PIL import Image
 from typing import Tuple, List, Optional
+import folder_paths
 
 # 导入模型管理器
 import sys
@@ -301,7 +302,7 @@ class Sa2VANode:
             try:
                 from pathlib import Path
                 model_path_obj = Path(model_path)
-                comfyui_root = self.model_manager.comfyui_path
+                comfyui_root = Path(folder_paths.base_path)
                 rel_path = model_path_obj.relative_to(comfyui_root)
                 print(f"📁 模型路径: ComfyUI/{rel_path}")
             except (ValueError, AttributeError):

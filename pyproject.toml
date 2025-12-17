@@ -1,7 +1,7 @@
 [project]
 name = "ComfyUI-Sa2VA-DP"
 description = "ComfyUI自定义节点，集成ByteDance Sa2VA模型，实现智能图像分割和视觉理解。"
-version = "1.0.2"
+version = "1.0.3"
 license = { file = "LICENSE" }
 
 [project.urls]
